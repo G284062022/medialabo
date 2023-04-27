@@ -1,0 +1,27 @@
+p {
+	color: navy;
+}
+
+p.info {
+	font-size: 10pt;
+}
+
+h1 {
+	background-color: #7f7fcf;
+}
+
+h2 {
+	border: solid 1px black;
+	margin: 5px;
+}
+
+div#zentai {
+	display: flex;
+	flex-direction: row;
+	width: 1024px;
+}
+
+div#zentai > div {
+	margin-left: 5px;
+	background-color: #ffefaf;
+}
