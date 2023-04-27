@@ -19,7 +19,7 @@ div#zentai {
 	display: flex;
 	grid-template-columns: 1fr 1fr;
 	flex-direction: row;
-	width: 1024px;
+	width: 1024px;  
 }
 
 div#zentai > div {
