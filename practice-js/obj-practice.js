@@ -24,6 +24,6 @@ console.log(campus.address);
 for (let n of campus.building) {
     console.log(n);
 } 
-
+ 
 //////////////// ここから下にプログラムを書きたそう!
 
