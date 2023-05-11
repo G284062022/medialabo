@@ -8,10 +8,6 @@ let campus = {
 	lat: 139.28201056633
 }
 
-console.log(media.address);   
-console.log(media.buildingD);    
-
-
 let gakka = [
 	{name: "機械システム工学科", ename: "Department of Mechanical Systems Engineering"},
 	{name: "電子システム工学科", ename: "Department of Electronics and Computer Systems"},
@@ -21,7 +17,7 @@ let gakka = [
 
 console.log(campus.address);
 
-for (let n of campus.building) {
+for (let n of campus.buildingD) {
     console.log(n);
 }  
  
