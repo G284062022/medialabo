@@ -19,7 +19,7 @@ for (let p3 of ps3) {								// 検索結果のp要素それぞれに対して�
 let p4 = document.querySelector('p#yacht');			// p#yacht 要素を検索
 p4.textContent = '夜更かししないでね';				// 要素のテキストを設定
 
-let s5 = document.querySelector('span#solt');		// span#solt 要素を検索
+let s5 = document.querySelector('span#solt');	 	// span#solt 要素を検索
 s5.textContent = 'あざらし';						// 要素のテキストを設定
 
 //// CSSプロパティの変更
