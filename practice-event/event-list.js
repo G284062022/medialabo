@@ -25,7 +25,7 @@ c6.addEventListener('focus', changeColor);
 // cell7: フォーカスが外れると色が変わる
 let c7 = document.querySelector('#cell7');
 c7.addEventListener('blur', changeColor);
-
+ 
 // cell8: キーボードのキー入力すると色が変わる
 let c8 = document.querySelector('#cell8');
 c8.addEventListener('keypress', changeColor);
