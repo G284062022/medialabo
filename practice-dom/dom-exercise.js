@@ -13,13 +13,33 @@ let data = [
 ];
 //// 注意: 以上は編集しないこと!
 
+
 // 練習4-2 メッセージ追加プログラム
+
+let p = document.createElement('p');				
+p.textContent = '写真表之都市の緯度经度';	
+h2.insertAdjacentElement('afterend', p);
 
 
 // 練習4-3 写真表作成プログラム 
 
-
+let img = document.createElement('img');				
+div.phototable.insertAdjacentElement('beforend', img);			
+document.getElementById("img").src="taro.png";
+document.getElementById("img").src="jiro.png";
+document.getElementById("img").src="hanako.png";
+div.insertAdjacentElement('beforeend', img);
+													
+													
 // 練習4-4 箇条書き削除プログラム
+
+var x=document.getElementById("main");
+var y=x.getElementsByTagName("p");
+
+let w = document.querySelector('li#whale');			// li#whale 要素を検索
+w.remove();				
+							                        // 要素を削除
+
 
 
 // 練習4-5 箇条書き追加プログラム
