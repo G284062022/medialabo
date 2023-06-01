@@ -5,3 +5,8 @@ h1 {
 ul,li  {
     color: yellow;
   }
+
+.special {
+    color: red;
+    font-weight: bold;
+}
