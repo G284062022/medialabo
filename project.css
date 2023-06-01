@@ -11,9 +11,16 @@ ul,li  {
     font-weight: bold;
 } 
 body {
-    color:#deab8a
+    background-image: url(darksouls.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .sen {
     border: solid ;
 }
+
+h1 {
+    text-align: center;
+} 
