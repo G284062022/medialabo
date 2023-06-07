@@ -8,7 +8,7 @@ function bt() {
     console.log(selectedOptionId); 
 
     // URL を設定
-    let url = `https://www.nishita-lab.org/web-contents/jsons/openweather/${selectedOptionId}.json`;
+    let url = `https://www.nishita-lab.org/web-contents/jsons/nhk/${selectedOptionId}.json`;
 
     // 通信開始
     axios.get(url)
@@ -27,16 +27,13 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    document.getElementById("name").innerHTML = data.name;
-    document.getElementById("coord.lon").innerHTML = data.coord.lon;
-    document.getElementById("coord.lat").innerHTML = data.coord.lat;
-    document.getElementById("weather.description").innerHTML = data.weather[0].description;
-    document.getElementById("main.temp_min").innerHTML = data.main.temp_min;
-    document.getElementById("main.temp_max").innerHTML = data.main.temp_max;
-    document.getElementById("main.humidity").innerHTML = data.main.humidity;
-    document.getElementById("wind.speed").innerHTML = data.wind.speed;
-    document.getElementById("wind.deg").innerHTML = data.wind.deg;
-    
+    document.getElementById("act").innerHTML = data.act;
+    document.getElementById("content").innerHTML = data.content;
+    document.getElementById("subtitle").innerHTML = data.subtitle;
+    document.getElementById("title").innerHTML = data.title;
+    document.getElementById("service.name").innerHTML = data.service.name;
+    document.getElementById("end_time").innerHTML = data.end_time;
+    document.getElementById("start_time").innerHTML = data.start_time;
 
 }
 

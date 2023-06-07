@@ -10,35 +10,35 @@
 
 <body>
 
-<p class="info">世界の天気のプロジェクト課題</p>
+<p class="info">NHK の番組表のプロジェクト課題</p>
 
-<h1 align="center">世界の天気情報</h1>
+<h1 align="center">NHK の番組表</h1>
 
 <p>
     <form action="#">
-    <label for="lang" >世界の都市</label>
+    <label for="lang" >NHK</label>
     <select name="sousaku" id="lang">
         <option value="-">--------------------</option>
-      <optgroup label="Europe ヨーロッパ">
-        <option value="Moscow" id="524901">モスクワ （ロシア）</option>
-        <option value="London" id="2643743">ロンドン （イギリス）</option>
-        <option value="Paris" id="2968815">パリ （フランス）</option>
+      <optgroup label="News 情報">
+        <option value="News" id="0000">ニュース・報道</option>
+        <option value="Wideshow" id="0205">情報・ワイドショー</option>
+        <option value="Sports" id="0100">スポーツ</option>
       </optgroup>
-      <optgroup label="Asiaアジア & Oceaniaオセアニア">
-        <option value="Beijing" id="1816670">北京 （中華人民共和国）</option>
-        <option value="Tokyo" id="1850147">東京 （日本）</option>
-        <option value="Sydney" id="2147714">シドニー （オーストラリア）</option>
-        <option value="Singapore" id="1880252">シンガポール</option>
+      <optgroup label="二次元 アニメ 映画">
+        <option value="Drama" id="0300">ドラマ</option>
+        <option value="Movie" id="0600">映画</option>
+        <option value="Animation" id="0700">アニメ</option>
       </optgroup>
-      <optgroup label="Africa アフリカ">
-        <option value="Cairo" id="360630">カイロ （エジプト）</option>
-        <option value="Johannesburg" id="993800">ヨハネスブルク （南アフリカ）</option>
+      <optgroup label="劇場 公演">
+        <option value="Theater" id="0903">劇場・公演</option>
+        <option value="Variety" id="0502">バラエティ</option>
+        <option value="music" id="0409">音楽</option>
       </optgroup>
     </optgroup>
-    <optgroup label="Americas アメリカ">
-      <option value="Rio de Janeiro" id="3451189">リオデジャネイロ （ブラジル）</option>
-      <option value="New York" id="5128581">ニューヨーク （アメリカ合衆国）</option>
-      <option value="Los Angeles" id="5368361">ロサンゼルス （アメリカ合衆国）</option>
+    <optgroup label="教養 教育">
+      <option value="Upbringing" id="0800">ドキュメンタリー・教養</option>
+      <option value="Education" id="1000"> 趣味・教育</option>
+      <option value="Welfare" id="1100">福祉</option>
     </optgroup>
     </select>
     <input type="button" value="検索" id="bt"/>
@@ -46,31 +46,33 @@
 </p>
 <div class="zentai">
     <div>
-        <h2>都市名</h2>
-        <p id="name"></p>
+        <h2>出演者</h2>
+        <p id="act"></p>
     </div>
     <div>
-        <h2>経緯度</h2>
-        <p id="coord.lon"></p>
-        <p id="coord.lat"></p>
+        <h2>番組説明文</h2>
+        <p id="content"></p>
     </div>
     <div>
-        <h2>天気</h2>
-        <p id="weather.description"></p>
+        <h2>番組サブタイトル</h2>
+        <p id="subtitle"></p>
     </div>
     <div>
-        <h2>最低気温-最高気温</h2>
-        <p id="main.temp_min"></p>
-        <p id="main.temp_max"></p>
+        <h2>番組名</h2>
+        <p id="title"></p>
     </div>
     <div>
-        <h2>湿度</h2>
-        <p id="main.humidity"></p>
+        <h2>チャンネル</h2>
+        <p id="service.name"></p>
     </div>
     <div>
-        <h2>風速-風向</h2>
-        <p id="wind.speed"></p>
-        <p id="wind.deg"></p>
+        <h2>番組開始時刻</h2>
+        <p id="start_time"></p>
+    </div>
+    <div>
+        <h2>番組終了時刻</h2>
+        <p id="end_time"></p>
+
     </div>
     
 </div>
