@@ -1,51 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="project.css">
+    <meta charset="utf-8">
+    <title>世界の天気</title>
+	<link rel="stylesheet" href="project.css">
+    <script src="project.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <form action ="#" class ="login-form">
-            <h2>登陆</h2>
-            <input
-             type="text" 
-             name="username"
-             placeholder="名前" 
-             />
-             <input
-             type="passward" 
-             name="password"
-             placeholder="密码"
-             />
-            <button type="submit">登陆</button>
-        </from>
-    </div>
-    </div>
-    <p><img src="nhk.png" alt="NHK の番組" width="300"></p>
-    <h1>NHK の番組表</h1>
-    <ul class="sen"> 
-        <li>0000 ... ニュース・報道</li>
-        <li>0100 ... スポーツ</li>
-        <li>0205 ... 情報・ワイドショー</li>
-        <li>0300 ... ドラマ</li>
-        <li>0409 ... 音楽</li>
-        <li>0502 ... バラエティ</li>
-        <li>0600 ... 映画</li>
-        <li class="special">0700 ... アニメ</li>
-        <li>0800 ... ドキュメンタリー・教養</li>
-        <li>0903 ... 劇場・公演</li>
-        <li>1000 ... 趣味・教育</li>
-        <li>1100 ... 福祉</li>
 
-    <form method="get" action="#" class="search_container">
-     <input type="text" size="25" placeholder="　キーワード検索">
-     <input type="submit" value="検索">
-    </form>   
-    </ul> 
+<p class="info">世界の天気のプロジェクト課題</p>
 
-</body>  
-</html>   
+<h1 align="center">世界の天気情報</h1>
+
+<p>
+    <form action="#">
+    <label for="lang" >世界の都市</label>
+    <select name="sousaku" id="lang">
+        <option value="-">--------------------</option>
+      <optgroup label="Europe ヨーロッパ">
+        <option value="Moscow" id="524901">モスクワ （ロシア）</option>
+        <option value="London" id="2643743">ロンドン （イギリス）</option>
+        <option value="Paris" id="2968815">パリ （フランス）</option>
+      </optgroup>
+      <optgroup label="Asiaアジア & Oceaniaオセアニア">
+        <option value="Beijing" id="1816670">北京 （中華人民共和国）</option>
+        <option value="Tokyo" id="1850147">東京 （日本）</option>
+        <option value="Sydney" id="2147714">シドニー （オーストラリア）</option>
+        <option value="Singapore" id="1880252">シンガポール</option>
+      </optgroup>
+      <optgroup label="Africa アフリカ">
+        <option value="Cairo" id="360630">カイロ （エジプト）</option>
+        <option value="Johannesburg" id="993800">ヨハネスブルク （南アフリカ）</option>
+      </optgroup>
+    </optgroup>
+    <optgroup label="Americas アメリカ">
+      <option value="Rio de Janeiro" id="3451189">リオデジャネイロ （ブラジル）</option>
+      <option value="New York" id="5128581">ニューヨーク （アメリカ合衆国）</option>
+      <option value="Los Angeles" id="5368361">ロサンゼルス （アメリカ合衆国）</option>
+    </optgroup>
+    </select>
+    <input type="button" value="検索" id="bt"/>
+    </form>
+</p>
+<div class="zentai">
+    <div>
+        <h2>都市名</h2>
+        <p id="name"></p>
+    </div>
+    <div>
+        <h2>経緯度</h2>
+        <p id="coord.lon"></p>
+        <p id="coord.lat"></p>
+    </div>
+    <div>
+        <h2>天気</h2>
+        <p id="weather.description"></p>
+    </div>
+    <div>
+        <h2>最低気温-最高気温</h2>
+        <p id="main.temp_min"></p>
+        <p id="main.temp_max"></p>
+    </div>
+    <div>
+        <h2>湿度</h2>
+        <p id="main.humidity"></p>
+    </div>
+    <div>
+        <h2>風速-風向</h2>
+        <p id="wind.speed"></p>
+        <p id="wind.deg"></p>
+    </div>
+    
+</div>
+
+</body>
+
