@@ -10,7 +10,7 @@ function bt() {
     // URL を設定
     let url = `https://www.nishita-lab.org/web-contents/jsons/nhk/${selectedOptionId}.json`;
 
-    // 通信開始
+    // 通信開始 
     axios.get(url)
         .then(showResult)   // 通信成功
         .catch(showError)   // 通信失敗
