@@ -1,16 +1,15 @@
-let b = document.querySelector('#bt');
-b.addEventListener('click', bt);
+let b = document.querySelector('#button');
+b.addEventListener('click', button);
 
 // 通信を開始する処理
-function bt() {
-    var selectElement = document.getElementById('lang');
+function button() {
+    var selectElement = document.getElementById('1');
     var selectedOptionId = selectElement.options[selectElement.selectedIndex].id;
-    console.log(selectedOptionId); 
 
     // URL を設定
-    let url = `https://www.nishita-lab.org/web-contents/jsons/nhk/${selectedOptionId}.json`;
-
-    // 通信開始 
+    let url = `https://www.nishita-lab.org/web-contents/jsons/hotpepper/${selectedOptionId}.json`;
+    
+    // 通信開始
     axios.get(url)
         .then(showResult)   // 通信成功
         .catch(showError)   // 通信失敗
@@ -26,14 +25,15 @@ function showResult(resp) {
     if (typeof data === 'string') {
         data = JSON.parse(data);
     }
-
-    document.getElementById("act").innerHTML = data.act;
-    document.getElementById("content").innerHTML = data.content;
-    document.getElementById("subtitle").innerHTML = data.subtitle;
-    document.getElementById("title").innerHTML = data.title;
-    document.getElementById("service.name").innerHTML = data.service.name;
-    document.getElementById("end_time").innerHTML = data.end_time;
-    document.getElementById("start_time").innerHTML = data.start_time;
+    document.getElementById("access").innerHTML = data.results.shop[0].access;
+    document.getElementById("address").innerHTML = data.results.shop[0].address;
+    document.getElementById("budget.name").innerHTML = data.results.shop[0].budget.name;
+    document.getElementById("catch").innerHTML = data.results.shop[0].catch;
+    document.getElementById("genre.name").innerHTML = data.results.shop[0].name;
+    document.getElementById("name").innerHTML = data.results.shop[0].name;
+    document.getElementById("open").innerHTML = data.results.shop[0].open;
+    document.getElementById("station_name").innerHTML = data.results.shop[0].station_name;
+    document.getElementById("subgenre_name").innerHTML = data.results.shop[0].sub_genre.name;
 
 }
 
