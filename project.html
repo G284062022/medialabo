@@ -2,80 +2,56 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>世界の天気</title>
+    <title>URL</title>
 	<link rel="stylesheet" href="project.css">
     <script src="project.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 </head>
 
 <body>
-
-<p class="info">NHK の番組表のプロジェクト課題</p>
-
-<h1 align="center">NHK の番組表</h1>
-
-<p> 
-    <form action="#">
-    <label for="lang" >NHK</label>
-    <select name="sousaku" id="lang">
-        <option value="-">--------------------</option>
-      <optgroup label="News 情報">
-        <option value="News" id="0000">ニュース・報道</option>
-        <option value="Wideshow" id="0205">情報・ワイドショー</option>
-        <option value="Sports" id="0100">スポーツ</option>
-      </optgroup>
-      <optgroup label="二次元 アニメ 映画">
-        <option value="Drama" id="0300">ドラマ</option>
-        <option value="Movie" id="0600">映画</option>
-        <option value="Animation" id="0700">アニメ</option>
-      </optgroup>
-      <optgroup label="劇場 公演">
-        <option value="Theater" id="0903">劇場・公演</option>
-        <option value="Variety" id="0502">バラエティ</option>
-        <option value="music" id="0409">音楽</option>
-      </optgroup>
-    </optgroup>
-    <optgroup label="教養 教育">
-      <option value="Upbringing" id="0800">ドキュメンタリー・教養</option>
-      <option value="Education" id="1000"> 趣味・教育</option>
-      <option value="Welfare" id="1100">福祉</option>
-    </optgroup>
+<h1>グルメ情報のURL</h1>
+<p>
+    <form>
+    <select name="sousaku" id="1">
+        <option id="G001">居酒屋</option>
+        <option id="G002">ダイニングバー・バル</option>
+        <option id="G003">創作料理</option>
+        <option id="G004">和食</option>
+        <option id="G005">洋食</option>
+        <option id="G006">イタリアン・フレンチ</option>
+        <option id="G007">中華</option>
+        <option id="G008">焼肉・ホルモン</option>
+        <option id="G009">アジア・エスニック料理</option>
+        <option id="G010">各国料理</option>
+        <option id="G011">カラオケ・パーティ</option>
+        <option id="G012">バー・カクテル</option>
+        <option id="G013">ラーメン</option>
+        <option id="G014">カフェ・スイーツ</option>
+        <option id="G015">その他グルメ</option>
+        <option id="G016">お好み焼き・もんじゃ</option>
+        <option id="G017">韓国料理</option>
+        
     </select>
-    <input type="button" value="検索" id="bt"/>
+    <input type="button" value="button" id="button"/>
     </form>
 </p>
-<div class="zentai">
-    <div>
-        <h2>出演者</h2>
-        <p id="act"></p>
-    </div>
-    <div>
-        <h2>番組説明文</h2>
-        <p id="content"></p>
-    </div>
-    <div>
-        <h2>番組サブタイトル</h2>
-        <p id="subtitle"></p>
-    </div>
-    <div>
-        <h2>番組名</h2>
-        <p id="title"></p>
-    </div>
-    <div>
-        <h2>チャンネル</h2>
-        <p id="service.name"></p>
-    </div>
-    <div>
-        <h2>番組開始時刻</h2>
-        <p id="start_time"></p>
-    </div>
-    <div>
-        <h2>番組終了時刻</h2>
-        <p id="end_time"></p> 
-
-    </div>
-    
-</div>
-
+<h2>アクセス情報</h2>
+<p id="access"></p>
+<h2>住所</h2>
+<p id="address"></p>
+<h2>予算</h2>
+<p id="budget.name"></p>
+<h2>キャッチコピー</h2>
+<p id="catch"></p>
+<h2>ジャンル</h2>
+<p id="genre.name"></p>
+<h2>店舗名</h2>
+<p id="name"></p>
+<h2>営業日時</h2>
+<p id="open"></p> 
+<h2>最寄駅</h2>
+<p id="station_name"></p>
+<h2>サブジャンルの名前</h2>
+<p id="subgenre_name"></p>
 </body>
 
