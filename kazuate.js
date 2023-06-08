@@ -15,7 +15,7 @@ function hantei() {
                 kaisu = 4;
             }else{
                 document.getElementById("result").textContent = 'まちがい．残念でした答えは' + kotae + 'です．';
-            }
+            } 
         }else{ 
             if(yoso === kotae){
                 document.getElementById("result").textContent = '正解です．おめでとう!';
