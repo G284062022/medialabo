@@ -32,4 +32,4 @@ function hantei() {
     kaisu++;
 }
 
-document.getElementById("submit").addEventListener("click", hantei);
+document.getElementById("submit").addEventListener("click", hantei); 
