@@ -4,25 +4,33 @@ p {
 
 p.info {
 	font-size: small;
-}
-
-h1 {
 	background-color: #dfdfdf;
 }
 
+h1 {	color: white;
+	text-shadow:1px 0px 10px navy;
+}
+
 h2 {
-	border: solid 1px black;
+	font-family: cursive;
+	color: #3f3faf;
+	background: linear-gradient(50deg,white,50%,#ffefaf);
 	margin: 5px;
 }
 
-div#zentai { 
+div#zentai {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	flex-direction: row;
-	width: 1024px;  
+	grid-auto-rows: 200px 200px;
+	grid-gap: 10px;
+	width: 1024px;
+	
 }
 
 div#zentai > div {
-	margin-left: 5px;
+	padding: 5px;
 	background-color: #ffefaf;
+}
+img.sign {
+	float: right;
 }
