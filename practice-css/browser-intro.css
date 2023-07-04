@@ -17,7 +17,7 @@ h2 {
 	background: linear-gradient(50deg,white,50%,#ffefaf);
 	margin: 5px;
 }
-
+  
 div#zentai {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
